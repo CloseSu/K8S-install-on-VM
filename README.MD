@@ -1,0 +1,1 @@
+install k8s on vm and spring boot intergration
