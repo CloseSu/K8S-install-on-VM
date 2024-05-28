@@ -1,0 +1,4 @@
+apiServer:
+  enabled: false
+installation:
+  kubeletVolumePluginPath: None
