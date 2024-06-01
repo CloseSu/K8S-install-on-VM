@@ -5,7 +5,7 @@ metadata:
   namespace: prometheus
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   ingressClassName: "nginx"
   rules:
