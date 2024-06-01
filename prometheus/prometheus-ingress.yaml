@@ -5,6 +5,7 @@ metadata:
   namespace: prometheus
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
 
 spec:
   ingressClassName: "nginx"
@@ -16,6 +17,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: prometheus-kube-prometheus-prometheus
+                name: prometheus-kube-prometheus-prometheus 
                 port:
-                  number: 8080
+                  number: 9090
